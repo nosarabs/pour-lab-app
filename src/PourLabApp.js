@@ -1,12 +1,11 @@
 import React, { useState } from "react";
-import axios from "axios";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Groq from "groq-sdk";
 
 
 // Options for methods and process (similar to your Python script)
-const methods = ['Aeropress', 'V60', 'Origami w/ Flat Filter', 'Origami w/ Cone Filter', 'Kalita'];
-const coffees = ['Red Catuai Natural', 'Marsellesa Termico', 'Geisha Red Honey', 'Pacamara Honey'];
+const methods = ['Aeropress', 'V60', 'Origami w/ Flat Filter', 'Origami w/ Cone Filter', 'Kalita', 'Random'];
+const coffees = ['Red Catuai Natural', 'Marsellesa Termico', 'Geisha Red Honey', 'Pacamara Honey','Random'];
 
 function getRandomNum(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -27,6 +26,7 @@ function PourLabApp() {
   const handleCoffeeSelect = (option) => {
     setCoffee(option === "Random" ? coffees[getRandomNum(0, coffees.length - 1)] : option);
   };
+  
 
   const generateRecipe = () => {
     const gramsValue = getRandomNum(12, 30);
@@ -67,7 +67,7 @@ function PourLabApp() {
 
   return (
     <div className="container">
-      <h1>Coffee Recipe Generator</h1>
+      <h1>Pour Lab</h1>
       <div>
         <h3>Select a Brewing Method</h3>
         {methods.map((methodOption) => (
@@ -98,6 +98,8 @@ function PourLabApp() {
         <div>
           <p>Method: {method}</p>
           <p>Process: {coffee}</p>
+          <p>Grams: {grams}</p>
+          <p>Ratio: {ratio}</p>
 
           <button className="btn btn-success" onClick={generateRecipe}>
             Generate Recipe
@@ -134,9 +136,16 @@ function getRecipe(method, coffee, ratio, grams) {
   pours.push(totalWater * 0.4);
 
   if (coffee === "Red Catuai Natural" || coffee === "Marsellesa Termico") {
-    pours.push((totalWater * 0.6) / 2);
+    for (let i = 0; i < 2; i++) {
+      const halfs = (totalWater * 0.6) / 2;
+      pours.push(pours[pours.length-1]+halfs);
+    }
+    
   } else if (coffee === "Geisha Red Honey" || coffee === "Pacamara Honey") {
-    pours.push((totalWater * 0.6) / 3);
+    for (let i = 0; i < 2; i++) {
+      const thirds = (totalWater * 0.6) / 3;
+      pours.push(pours[pours.length-1]+thirds);
+    }
   }
 
   return pours;
