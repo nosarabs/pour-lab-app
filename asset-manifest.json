@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/pour-lab-app/static/css/main.79d19d76.css",
-    "main.js": "/pour-lab-app/static/js/main.fd0ce9c3.js",
+    "main.js": "/pour-lab-app/static/js/main.5f73744c.js",
     "static/js/453.fe6b8e63.chunk.js": "/pour-lab-app/static/js/453.fe6b8e63.chunk.js",
     "index.html": "/pour-lab-app/index.html",
     "main.79d19d76.css.map": "/pour-lab-app/static/css/main.79d19d76.css.map",
-    "main.fd0ce9c3.js.map": "/pour-lab-app/static/js/main.fd0ce9c3.js.map",
+    "main.5f73744c.js.map": "/pour-lab-app/static/js/main.5f73744c.js.map",
     "453.fe6b8e63.chunk.js.map": "/pour-lab-app/static/js/453.fe6b8e63.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.79d19d76.css",
-    "static/js/main.fd0ce9c3.js"
+    "static/js/main.5f73744c.js"
   ]
 }
