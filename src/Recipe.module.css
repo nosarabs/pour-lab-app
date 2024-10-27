@@ -1,0 +1,18 @@
+/* ListItem.module.css */
+.listItem {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.leftContent {
+    /* Left content styles */
+    font-weight: normal;
+}
+
+.rightContent {
+    /* Right content styles */
+    color: gray;
+    text-align: right;
+}
