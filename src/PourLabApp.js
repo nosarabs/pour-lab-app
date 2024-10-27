@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
 import Groq from "groq-sdk";
+import BrewingMethods from "./BrewingMethods";
 
 
 // Options for methods and process (similar to your Python script)
-const methods = ['Aeropress', 'V60', 'Origami w/ Flat Filter', 'Origami w/ Cone Filter', 'Kalita', 'Random'];
 const coffees = ['Red Catuai Natural', 'Marsellesa Termico', 'Geisha Red Honey', 'Pacamara Honey','Random'];
 
 function getRandomNum(min, max) {
@@ -18,10 +17,6 @@ function PourLabApp() {
   const [ratio, setRatio] = useState(null);
   const [recipe, setRecipe] = useState(null);
   const [aiRecipe, setAiRecipe] = useState(null);
-
-  const handleMethodSelect = (option) => {
-    setMethod(option === "Random" ? methods[getRandomNum(0, methods.length - 1)] : option);
-  };
 
   const handleCoffeeSelect = (option) => {
     setCoffee(option === "Random" ? coffees[getRandomNum(0, coffees.length - 1)] : option);
@@ -70,15 +65,7 @@ function PourLabApp() {
       <h1>Pour Lab</h1>
       <div>
         <h3>Select a Brewing Method</h3>
-        {methods.map((methodOption) => (
-          <button
-            key={methodOption}
-            className="btn btn-primary me-2"
-            onClick={() => handleMethodSelect(methodOption)}
-          >
-            {methodOption}
-          </button>
-        ))}
+        <BrewingMethods />
       </div>
 
       <div>
