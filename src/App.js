@@ -1,10 +1,10 @@
 import React from "react";
-import PourLabApp from "./PourLabApp";
+import MainPage from "./MainPage";
 
 function App() {
   return (
     <div className="App">
-      <PourLabApp />
+      <MainPage />
     </div>
   );
 }
