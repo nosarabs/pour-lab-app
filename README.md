@@ -1,29 +1,29 @@
-# Pour Lab
+# Pour Lab ![alt text](image.png)
 
 A minimalistic React app designed to help coffee enthusiasts determine optimal brewing techniques. The app calculates custom pour schedules based on coffee variety, drying process, brewing method, grams of coffee, and water to ground coffee ratio. Deployed on GitHub Pages for easy access.
 
-Disclaimer! 
+Disclaimer ⚠️
 This app was developed for my own personal enjoyment 
 The goal is to learn React and create a useful tool for myself.  
 
 ## Table of Contents
 
-- [Pour Lab](#pour-lab)
+- [Pour Lab ](#pour-lab-)
   - [Table of Contents](#table-of-contents)
-  - [Features](#features)
-  - [Demo](#demo)
+  - [Features 🧩](#features-)
+  - [Demo 👀](#demo-)
   - [Technologies 🚀](#technologies-)
   - [License 📜](#license-)
 
-## Features
+## Features 🧩
 
-- Customizable dropdown selection for brewing method and coffee type
+- Customizable dropdown selection for brewing method and coffee variety/process
 - Dynamic pour scheduling calculations based on user input
 - Integration with OpenAI’s API to provide brewing advice
 - Simple and responsive UI with Bootstrap styling
 - Deployed to GitHub Pages for easy accessibility
 
-## Demo
+## Demo 👀
 
 You can view the app live [here](https://nosarabs.github.io/pour-lab-app).
 
