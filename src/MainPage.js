@@ -46,7 +46,7 @@ const MainPage = () => {
     return (
         <div className="container">
 
-            <h1>Pour Lab</h1>
+            <h1>Pourly</h1>
 
             <div>
                 <div>
