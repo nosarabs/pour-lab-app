@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Dropdown from './Dropdown';
 import RangeInput from './RangeInput';
 import Recipe from './Recipe'
+import ThemeToggle from "./ThemeToggle";
 
 
 const MainPage = () => {
@@ -50,15 +51,15 @@ const MainPage = () => {
 
             <div>
                 <div>
-                    <h5>Brewing Method</h5>
-                    <Dropdown options={brewingMethods} initialSelected={method} onSelect={handleBrewingMethodSelect} />
-                </div>
-                
-                <div>
-                    <h5>Variety & Process</h5>
-                    <Dropdown options={coffeeTypes} onSelect={handleCoffeeTypeSelect} />
+                    <Dropdown label={"Brewing Method"} options={brewingMethods} initialSelected={method} onSelect={handleBrewingMethodSelect} />
+
+                    <br></br>
+
+                    <Dropdown label={"Variety & Process"} options={coffeeTypes} onSelect={handleCoffeeTypeSelect} />
                 </div>
             </div>
+
+            <br></br>
 
             <div>
                 <div>
@@ -72,12 +73,16 @@ const MainPage = () => {
                 </div>
             </div>
 
+            <br></br>
+
             <div>
                 <h5>
                     Recipe <span className="badge text-bg-warning">{recipeName}</span>
                 </h5> 
                 <Recipe recipeName={recipeName} method={method} coffee={coffee} grams={grams} ratio={ratio} />
+                
             </div>
+            <ThemeToggle />
         </div>
     );
 };

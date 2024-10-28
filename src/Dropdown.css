@@ -1,0 +1,23 @@
+.dropdown-button {
+    width: 100%; /* Set fixed width as needed */
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    /* color: var(--text-color); */
+    background-color: white !important;    
+    
+}
+
+.dropdown-label {
+    margin-right: auto;
+    color: black;
+}
+
+.dropdown-selection {
+    margin-left: auto;
+    color: gray;
+}
+
+.btn.dropdown-toggle.dropdown-button::after {
+    border-top-color: gray; /* Replace 'white' with your preferred color */
+}
