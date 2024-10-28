@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/pourly/static/css/main.e87f8adb.css",
-    "main.js": "/pourly/static/js/main.a8ab377f.js",
-    "static/js/453.93d6b893.chunk.js": "/pourly/static/js/453.93d6b893.chunk.js",
-    "index.html": "/pourly/index.html",
-    "main.e87f8adb.css.map": "/pourly/static/css/main.e87f8adb.css.map",
-    "main.a8ab377f.js.map": "/pourly/static/js/main.a8ab377f.js.map",
-    "453.93d6b893.chunk.js.map": "/pourly/static/js/453.93d6b893.chunk.js.map"
+    "main.css": "/pourly-dev/static/css/main.342af0b2.css",
+    "main.js": "/pourly-dev/static/js/main.ad8aa726.js",
+    "static/js/453.93d6b893.chunk.js": "/pourly-dev/static/js/453.93d6b893.chunk.js",
+    "index.html": "/pourly-dev/index.html",
+    "main.342af0b2.css.map": "/pourly-dev/static/css/main.342af0b2.css.map",
+    "main.ad8aa726.js.map": "/pourly-dev/static/js/main.ad8aa726.js.map",
+    "453.93d6b893.chunk.js.map": "/pourly-dev/static/js/453.93d6b893.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e87f8adb.css",
-    "static/js/main.a8ab377f.js"
+    "static/css/main.342af0b2.css",
+    "static/js/main.ad8aa726.js"
   ]
 }
