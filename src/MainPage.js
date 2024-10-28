@@ -9,7 +9,7 @@ const MainPage = () => {
     const [method, setMethod] = useState(brewingMethods[0]);
 
     const coffeeTypes = ['Red Catuai Natural', 'Marsellesa Termico', 'Geisha Red Honey', 'Pacamara Honey'];
-    const [coffee, setCoffee] = useState(null);
+    const [coffee, setCoffee] = useState(coffeeTypes[0]);
 
 
     const minGrams = 12;
@@ -29,6 +29,7 @@ const MainPage = () => {
     };
 
     const handleCoffeeTypeSelect = (type) => {
+        setCoffee(type)
         console.log("Selected Coffee Type:", type);
     };
 
@@ -73,9 +74,9 @@ const MainPage = () => {
 
             <div>
                 <h5>
-                    Recipe <span class="badge text-bg-warning">{recipeName}</span>
+                    Recipe <span className="badge text-bg-warning">{recipeName}</span>
                 </h5> 
-                <Recipe recipeName={recipeName} method={method} ratio={ratio}/>
+                <Recipe recipeName={recipeName} method={method} coffee={coffee} grams={grams} ratio={ratio} />
             </div>
         </div>
     );

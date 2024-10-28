@@ -1,45 +1,45 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styles from './Recipe.module.css'
 
-const Recipe = ({ recipeName, pouringSchedule }) => {
-    const [selectedRecipe, setRecipe] = useState(recipeName);
+function getPourSchedule(recipeName, method, coffee, grams, ratio) {
+    const totalWater = ratio * grams;
+    const bloom = 3 * grams;
+    let pours = [];
 
-    // Handle dropdown selection
-    // const handleSelect = (option) => {
-    //     setSelectedOption(option);
-    //     if (onSelect) {
-    //         onSelect(option); // Pass selected option to the parent component
-    //     }
-    // };
+    pours.push(bloom);
+    pours.push(totalWater * 0.4);
+
+    if (coffee === "Red Catuai Natural" || coffee === "Marsellesa Termico") {
+        for (let i = 0; i < 2; i++) {
+            const halfs = (totalWater * 0.6) / 2;
+            pours.push(pours[pours.length-1]+halfs);
+        }
+        
+    } else if (coffee === "Geisha Red Honey" || coffee === "Pacamara Honey") {
+        for (let i = 0; i < 3; i++) {
+            const thirds = (totalWater * 0.6) / 3;
+            pours.push(pours[pours.length-1]+thirds);
+        }
+    }
+
+    return pours;
+}
+
+const Recipe = ({ recipeName, method, coffee, grams, ratio }) => {
+
+    // const [selectedRecipe, setRecipe] = useState(recipeName);
+    const pours = getPourSchedule(recipeName, method, coffee, grams, ratio) 
+    console.log(recipeName, method, coffee, grams, ratio, pours);
 
     return (
         <div>
-            {/* <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                {options.map((option, index) => (
-                    <li key={index}>
-                        <button
-                            className="dropdown-item"
-                            onClick={() => handleSelect(option)}
-                        >
-                            {option}
-                        </button>
+            <ul className="list-group">
+                {pours.map((step, index) => (
+                    <li className="list-group-item d-flex justify-content-between" key={index}>
+                        <span className={styles.leftContent}>{step}g</span>
+                        <span className={styles.rightContent}>Right Content</span>
                     </li>
                 ))}
-            </ul> */}
-            <ul class="list-group">
-                <li className="list-group-item d-flex justify-content-between">
-                    <span className={styles.leftContent}>Left Content</span>
-                    <span className={styles.rightContent}>Right Content</span>
-                </li>
-                <li className="list-group-item d-flex justify-content-between">
-                    <span className={styles.leftContent}>Left Content</span>
-                    <span className={styles.rightContent}>Right Content</span>
-                </li>
-                <li className="list-group-item d-flex justify-content-between">
-                    <span className={styles.leftContent}>Left Content</span>
-                    <span className={styles.rightContent}>Right Content</span>
-                </li>
-
             </ul>
         </div>
     );
