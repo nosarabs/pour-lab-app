@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/pour-lab-app/static/css/main.5166994c.css",
-    "main.js": "/pour-lab-app/static/js/main.8e2adaed.js",
-    "static/js/453.fe6b8e63.chunk.js": "/pour-lab-app/static/js/453.fe6b8e63.chunk.js",
-    "index.html": "/pour-lab-app/index.html",
-    "main.5166994c.css.map": "/pour-lab-app/static/css/main.5166994c.css.map",
-    "main.8e2adaed.js.map": "/pour-lab-app/static/js/main.8e2adaed.js.map",
-    "453.fe6b8e63.chunk.js.map": "/pour-lab-app/static/js/453.fe6b8e63.chunk.js.map"
+    "main.css": "/pourly/static/css/main.e87f8adb.css",
+    "main.js": "/pourly/static/js/main.a8ab377f.js",
+    "static/js/453.93d6b893.chunk.js": "/pourly/static/js/453.93d6b893.chunk.js",
+    "index.html": "/pourly/index.html",
+    "main.e87f8adb.css.map": "/pourly/static/css/main.e87f8adb.css.map",
+    "main.a8ab377f.js.map": "/pourly/static/js/main.a8ab377f.js.map",
+    "453.93d6b893.chunk.js.map": "/pourly/static/js/453.93d6b893.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5166994c.css",
-    "static/js/main.8e2adaed.js"
+    "static/css/main.e87f8adb.css",
+    "static/js/main.a8ab377f.js"
   ]
 }
