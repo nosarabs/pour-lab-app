@@ -7,12 +7,6 @@ The goal is to learn React and create a useful tool for myself.
 
 ## Table of Contents
 
-- [Features](#features)
-- [Demo](#demo)
-<!-- - [Installation](#installation) -->
-<!-- - [Usage](#usage) -->
-<!-- - [Environment Variables](#environment-variables) -->
-<!-- - [Deployment](#deployment) -->
 - [Pour Lab](#pour-lab)
   - [Table of Contents](#table-of-contents)
   - [Features](#features)
