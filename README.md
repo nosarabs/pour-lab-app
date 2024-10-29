@@ -24,7 +24,7 @@ This app was developed for my own personal enjoyment, with the only goal of lear
 
 ## Demo 👀
 
-You can view the app live [here](https://nosarabs.github.io/pour-lab-app).
+You can view the app live [here](https://nosarabs.github.io/pourly).
 
 ## Technologies 🚀
 
