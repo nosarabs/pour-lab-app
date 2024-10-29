@@ -47,13 +47,17 @@ const MainPage = () => {
     return (
         <div className="container">
 
+            <br></br>
+
             <h1>Pourly</h1>
 
-            <div>
-                <div>
-                    <Dropdown label={"Brewing Method"} options={brewingMethods} initialSelected={method} onSelect={handleBrewingMethodSelect} />
+            <br></br>
 
-                    <br></br>
+            <div className="container">
+                <div>
+                    <Dropdown label={"Brewing Method"} options={brewingMethods} initialSelected={method} onSelect={handleBrewingMethodSelect}/>
+
+                    {/* <br></br> */}
 
                     <Dropdown label={"Variety & Process"} options={coffeeTypes} onSelect={handleCoffeeTypeSelect} />
                 </div>
@@ -61,24 +65,32 @@ const MainPage = () => {
 
             <br></br>
 
-            <div>
+            <div className="container">
                 <div>
-                    <h5>Grams {grams}g</h5>               
+                    <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                        <h6>Grams</h6>
+                        <h6>{grams}g</h6>
+                    </div>
                     <RangeInput min={minGrams} max={maxGrams} step={1} initialValue={12} onChange={handleGramsChange} />
                 </div>
-                
+
+                <br></br>
                 <div>
-                    <h5>Ratio 1:{ratio}</h5>
+                    <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                        <h6>Ratio</h6>
+                        <h6>1:{ratio}</h6>
+                    </div>
                     <RangeInput min={minRatio} max={maxRatio} step={1} initialValue={10} onChange={handleRatioChange} />
                 </div>
             </div>
 
             <br></br>
 
-            <div>
-                <h5>
-                    Recipe <span className="badge text-bg-warning">{recipeName}</span>
-                </h5> 
+            <div className="container">
+                <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                    <h5> Recipe </h5>
+                    <h5> <span className="badge text-bg-warning">{recipeName}</span> </h5>
+                </div>
                 <Recipe recipeName={recipeName} method={method} coffee={coffee} grams={grams} ratio={ratio} />
                 
             </div>

@@ -4,7 +4,8 @@
     justify-content: space-between;
     align-items: center;
     /* color: var(--text-color); */
-    background-color: white !important;    
+    background-color: white !important;   
+    border: 1px solid #ddd !important; 
     
 }
 
@@ -21,3 +22,7 @@
 .btn.dropdown-toggle.dropdown-button::after {
     border-top-color: gray; /* Replace 'white' with your preferred color */
 }
+/* 
+.dropdown-menu {
+    width: 100%;
+} */

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Dropdown.css'
 
-const Dropdown = ({ options, initialSelected, label, onSelect }) => {
+const Dropdown = ({ options, initialSelected, label, style, onSelect }) => {
     const [selectedOption, setSelectedOption] = useState(initialSelected || options[0]);
 
     // Handle dropdown selection
@@ -24,7 +24,7 @@ const Dropdown = ({ options, initialSelected, label, onSelect }) => {
                 <span className="dropdown-label">{label}</span>
                 <span className="dropdown-selection">{selectedOption}</span>
             </button>
-            <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
                 {options.map((option, index) => (
                     <li key={index}>
                         <button
