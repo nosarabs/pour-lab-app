@@ -57,7 +57,7 @@ const MainPage = () => {
                 <div>
                     <Dropdown label={"Brewing Method"} options={brewingMethods} initialSelected={method} onSelect={handleBrewingMethodSelect}/>
 
-                    {/* <br></br> */}
+                    <br></br>
 
                     <Dropdown label={"Variety & Process"} options={coffeeTypes} onSelect={handleCoffeeTypeSelect} />
                 </div>
@@ -71,7 +71,7 @@ const MainPage = () => {
                         <h6>Grams</h6>
                         <h6>{grams}g</h6>
                     </div>
-                    <RangeInput min={minGrams} max={maxGrams} step={1} initialValue={12} onChange={handleGramsChange} />
+                    <RangeInput min={minGrams} max={maxGrams} step={0.1} initialValue={12} onChange={handleGramsChange} />
                 </div>
 
                 <br></br>
