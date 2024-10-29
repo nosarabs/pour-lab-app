@@ -2,7 +2,7 @@
 
 A minimalistic React app designed to help coffee enthusiasts determine optimal brewing techniques. The app calculates custom pour schedules based on coffee variety, drying process, brewing method, grams of coffee, and water to ground coffee ratio. Deployed on GitHub Pages for easy access.
 
-Disclaimer ⚠️  
+⚠️ Disclaimer  
 This app was developed for my own personal enjoyment, with the only goal of learning React and creating a useful tool for myself.  
 
 <!-- ## Table of Contents
