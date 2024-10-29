@@ -25,6 +25,12 @@ function getPourSchedule(recipeName, method, coffee, grams, ratio) {
     return pours;
 }
 
+function seconds2Minutes(seconds) {
+    const minutes = Math.floor(seconds / 60);
+    const remainingSeconds = seconds % 60;
+    return `${minutes}:${remainingSeconds < 10 ? '0' : ''}${remainingSeconds}`;
+}
+
 const Recipe = ({ recipeName, method, coffee, grams, ratio }) => {
 
     // const [selectedRecipe, setRecipe] = useState(recipeName);
@@ -37,7 +43,7 @@ const Recipe = ({ recipeName, method, coffee, grams, ratio }) => {
                 {pours.map((step, index) => (
                     <li className="list-group-item d-flex justify-content-between" key={index}>
                         <span className={styles.leftContent}>{step}g</span>
-                        <span className={styles.rightContent}>Right Content</span>
+                        <span className={styles.rightContent}>{seconds2Minutes((index+1)*35)}</span>
                     </li>
                 ))}
             </ul>
