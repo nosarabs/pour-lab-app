@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './RangeInput.css'
 
 const RangeInput = ({ min, max, step, initialValue, onChange }) => {
     const [value, setValue] = useState(initialValue || min);
@@ -21,8 +22,8 @@ const RangeInput = ({ min, max, step, initialValue, onChange }) => {
                 step={step}
                 value={value}
                 onChange={handleChange}
+                className='rangeInput'
             />
-            {/* <span>{value}</span> Display the current value */}
         </div>
     );
 };
