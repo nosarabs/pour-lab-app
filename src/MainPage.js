@@ -5,13 +5,13 @@ import Recipe from './Recipe'
 import ThemeToggle from "./ThemeToggle";
 
 
-const MainPage = () => {
-    const brewingMethods = ['Aeropress', 'V60', 'Origami w/ Flat Filter', 'Origami w/ Cone Filter', 'Kalita'];
+const MainPage = ({brewingMethods, coffeeTypes}) => {
+
+    // const brewingMethods = ['Aeropress', 'V60', 'Origami w/ Flat Filter', 'Origami w/ Cone Filter', 'Kalita'];
     const [method, setMethod] = useState(brewingMethods[0]);
 
-    const coffeeTypes = ['Red Catuai Natural', 'Marsellesa Termico', 'Geisha Red Honey', 'Pacamara Honey'];
+    // const coffeeTypes = ['Red Catuai Natural', 'Marsellesa Termico', 'Geisha Red Honey', 'Pacamara Honey'];
     const [coffee, setCoffee] = useState(coffeeTypes[0]);
-
 
     const minGrams = 12;
     const maxGrams = 30;
@@ -47,19 +47,13 @@ const MainPage = () => {
     return (
         <div className="container">
 
-            <br></br>
-
-            <h1>Pourly</h1>
-
-            <br></br>
-
             <div className="container">
                 <div>
                     <Dropdown label={"Brewing Method"} options={brewingMethods} initialSelected={method} onSelect={handleBrewingMethodSelect}/>
 
                     <br></br>
 
-                    <Dropdown label={"Variety & Process"} options={coffeeTypes} onSelect={handleCoffeeTypeSelect} />
+                    <Dropdown label={"Variety & Process"} options={coffeeTypes} initialSelected={coffee} onSelect={handleCoffeeTypeSelect} />
                 </div>
             </div>
 
