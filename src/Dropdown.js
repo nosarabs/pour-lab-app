@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Dropdown.css'
 
-const Dropdown = ({ options, initialSelected, label, style, onSelect }) => {
+const Dropdown = ({ options, initialSelected, label, onSelect }) => {
     const [selectedOption, setSelectedOption] = useState(initialSelected || options[0]);
 
     // Handle dropdown selection

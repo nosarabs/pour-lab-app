@@ -1,0 +1,12 @@
+.navbar{
+    background-color: black !important;
+}
+
+.navbar-brand {
+    color: white !important;
+}
+
+.nav-link {
+    color: white !important;
+    /* color: var(--bs-warning) !important; */
+}
