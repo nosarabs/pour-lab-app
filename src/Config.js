@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import ThemeToggle from "./ThemeToggle";
+
 
 const Config = ({ onAddBrewingMethod, onAddCoffeeType }) => {
     const [newMethod, setNewMethod] = useState('');
@@ -37,6 +39,8 @@ const Config = ({ onAddBrewingMethod, onAddCoffeeType }) => {
                 />
                 <button onClick={handleAddCoffeeType}>Add Coffee Type</button>
             </div>
+            <ThemeToggle />
+
         </div>
     );
 };

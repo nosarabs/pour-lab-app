@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Dropdown from './Dropdown';
 import RangeInput from './RangeInput';
 import Recipe from './Recipe'
-import ThemeToggle from "./ThemeToggle";
 
 
 const MainPage = ({brewingMethods, coffeeTypes}) => {
@@ -88,7 +87,6 @@ const MainPage = ({brewingMethods, coffeeTypes}) => {
                 <Recipe recipeName={recipeName} method={method} coffee={coffee} grams={grams} ratio={ratio} />
                 
             </div>
-            <ThemeToggle />
         </div>
     );
 };

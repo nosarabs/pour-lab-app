@@ -1,21 +1,22 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaCog } from 'react-icons/fa'; // Using Font Awesome for config icon
+import { FaBars } from 'react-icons/fa'; // Using Font Awesome for config icon
+import './Navbar.css'
 
 const Navbar = () => {
     return (
         // <h1>Pourly</h1>
-        <nav className="navbar navbar-expand-lg text-bg-warning">
+        <nav className="navbar navbar-expand-lg">
             <div className="container-fluid">
                 {/* Left Side: App Title */}
                 <Link to="/pourly" className="navbar-brand mb-0 h1">
-                    Pourly
+                    pourly
                 </Link>
 
                 {/* Right Side: Config Icon */}
                 <div className="d-flex">
                     <Link to="/config" className="nav-link">
-                        <FaCog size={22}/>
+                        <FaBars size={22}/>
                     </Link>
                 </div>
             </div>
