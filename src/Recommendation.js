@@ -70,7 +70,7 @@ const Recommendation = ({ type, method, coffee, grams, ratio }) => {
         </div>
       )}
       {type === "C40" && (
-        <div className="alert alert-warning" role="alert">
+        <div className="alert alert-success" role="alert">
           <strong>C40</strong> {state.grind}
         </div>
       )}
