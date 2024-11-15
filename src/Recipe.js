@@ -9,13 +9,13 @@ function getPourSchedule(recipeName, method, coffee, grams, ratio) {
     pours.push(bloom);
     pours.push(totalWater * 0.4);
 
-    if (coffee === "Red Catuai Natural" || coffee === "Marsellesa Termico") {
+    if (coffee === "Red Catuai Natural" || coffee === "Marsellesa Termico" || coffee === "Anaerobic H15") {
         for (let i = 0; i < 2; i++) {
             const halfs = (totalWater * 0.6) / 2;
             pours.push(pours[pours.length-1]+halfs);
         }
         
-    } else if (coffee === "Geisha Red Honey" || coffee === "Pacamara Honey") {
+    } else if (coffee === "Geisha Red Honey" || coffee === "Pacamara Honey" || coffee === "Pacamara Blackmoon") {
         for (let i = 0; i < 3; i++) {
             const thirds = (totalWater * 0.6) / 3;
             pours.push(pours[pours.length-1]+thirds);
@@ -35,7 +35,7 @@ const Recipe = ({ recipeName, method, coffee, grams, ratio }) => {
 
     // const [selectedRecipe, setRecipe] = useState(recipeName);
     const pours = getPourSchedule(recipeName, method, coffee, grams, ratio) 
-    console.log(recipeName, method, coffee, grams, ratio, pours);
+    // console.log(recipeName, method, coffee, grams, ratio, pours);
 
     return (
         <div>
