@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/pourly/static/css/main.2f3a512d.css",
-    "main.js": "/pourly/static/js/main.e5e4eb42.js",
+    "main.js": "/pourly/static/js/main.bec73c61.js",
     "static/js/453.93d6b893.chunk.js": "/pourly/static/js/453.93d6b893.chunk.js",
-    "static/media/recs.csv": "/pourly/static/media/recs.6677d7f40ef67639dedd.csv",
+    "static/media/recs.csv": "/pourly/static/media/recs.7638150e907e93bafe9d.csv",
     "index.html": "/pourly/index.html",
     "main.2f3a512d.css.map": "/pourly/static/css/main.2f3a512d.css.map",
-    "main.e5e4eb42.js.map": "/pourly/static/js/main.e5e4eb42.js.map",
+    "main.bec73c61.js.map": "/pourly/static/js/main.bec73c61.js.map",
     "453.93d6b893.chunk.js.map": "/pourly/static/js/453.93d6b893.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2f3a512d.css",
-    "static/js/main.e5e4eb42.js"
+    "static/js/main.bec73c61.js"
   ]
 }
